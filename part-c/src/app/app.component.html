@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+
+<input type="text" #name placeholder="enter name"><br>
+
+<input type="text" #address placeholder="enter address"><br>
+
+<input type="text" #contact placeholder="enter contact"><br>
+
+<input type="email" #email placeholder="enter email"><br>
+
+<input type="password" #password placeholder="enter password"><br>
+
+<button (click)="getvalue(name.value ,address.value ,contact.value,email.value)">register</button>
+
+<h1>your resister data</h1><br>
+<p>name:{{displayname}}</p>
+<p>address:{{displayaddress}}</p>
+<p>contact:{{displaycontact}}</p>
+<p>email:{{displayemail}}</p>
